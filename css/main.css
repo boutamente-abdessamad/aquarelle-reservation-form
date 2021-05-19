@@ -1,0 +1,432 @@
+/* ---------------------------------------------------------------------------- */
+/* -------------------------------- Global  STYLE ----------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+
+/*--------------------- Fonts ----------------*/
+@font-face {
+    font-family: "adam";
+    font-display: fallback;
+    src: url("../fonts/Adam.otf");
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    font-display: fallback;
+    src: url("../fonts/roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Black";
+    font-display: fallback;
+    src: url("../fonts/roboto/Roboto-Black.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Medium";
+    font-display: fallback;
+    src: url("../fonts/roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    font-display: fallback;
+    src: url("../fonts/roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Light";
+    font-display: fallback;
+    src: url("../fonts/roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-Light";
+    font-display: fallback;
+    src: url("../fonts/poppins/Poppins-Light.otf");
+}
+
+@font-face {
+    font-family: "Poppins-ExtraBold";
+    font-display: fallback;
+    src: url("../fonts/poppins/Poppins-ExtraBold.otf");
+}
+
+@font-face {
+    font-family: "Poppins-Medium";
+    font-display: fallback;
+    src: url("../fonts/poppins/Poppins-Medium.otf");
+}
+
+@font-face {
+    font-family: "Roboto-Condensed-light";
+    font-display: fallback;
+    src: url("../fonts/roboto/RobotoCondensed-Light.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Condensed-Bold";
+    font-display: fallback;
+    src: url("../fonts/roboto/RobotoCondensed-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Condensed-Regular";
+    font-display: fallback;
+    src: url("../fonts/roboto/RobotoCondensed-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-ExtraLight";
+    font-display: fallback;
+    src: url("../fonts/poppins/Poppins-ExtraLight.otf");
+}
+
+@font-face {
+    font-family: "Roboto-Medium";
+    font-display: fallback;
+    src: url("../fonts/roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Blacksword";
+    font-display: fallback;
+    src: url("../fonts/poppins/Blacksword.otf");
+}
+
+/*-------------- End Fonts -------------------*/
+
+a:hover{
+    text-decoration:none;
+}
+
+.aq-reservation {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.aq-reservation>.container>.row{
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.aq-reservation-box {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 7px rgb(0 0 0 / 31%);
+    text-align: center;
+    padding: 60px;
+    height: calc(100vh - 80px);
+}
+
+.aq-reservation-logo img {
+    width: 164px;
+    height: 84px;
+}
+
+.aq-reservation-title {
+    font-family: Roboto-Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 29px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #050D10;
+    margin: 15px 0px;
+}
+
+.aq-reservation-title span{
+    color: #775AA6;
+}
+
+.aq-reservation-desc p,
+.aq-reservation-desc {
+    font-family: Roboto-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    color: #606163;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.aq-reservation-desc {
+    padding-bottom: 25px;
+}
+
+.aq-reservation-desc p{
+    margin-bottom: 0;
+}
+
+.aq-reservation-desc::after{
+    content: '';
+    bottom:0;
+    position: absolute;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    width: 60%;
+    border-bottom: 0.5px solid #A5A8AB;
+}
+
+.aq-calendar-title {
+    font-family: 'Roboto-Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 43px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #050D10;
+}
+
+.aq-next-step {
+    font-family: 'Roboto-Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 43px;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: #775AA6;
+}
+
+.aq-next-step img{
+    margin-left: 5px;
+    width: 23px;
+}
+
+.aq-available-hours-title {
+    font-family: Roboto-Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 29px;
+    letter-spacing: 0.07em;
+    color: #050D10;
+}
+
+
+.aq-available-hour-box input[type="radio"]{
+    display: none;
+}
+
+.aq-available-hour-content-box h2 {
+    font-family: 'Roboto-Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 29px;
+    letter-spacing: 0.07em;
+    color: #050D10;
+    transition: .3s all;
+    margin-bottom: 0;   
+}
+
+.aq-available-hour-content-box {
+    background: #F0F0F0;
+    transition: .3s all;
+    width: 100%;
+    cursor: pointer;
+    padding: 10px 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.btn-select-hour {
+    pointer-events: none;
+    background: #050D10;
+    border-radius: 3px;
+    font-family: Roboto-Medium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    padding: 0 15px;
+    line-height: 30px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.aq-available-hour-box>input[type="radio"]:checked + .aq-available-hour-content-box{
+    background: #775AA6;
+}   
+
+.aq-available-hour-box>input[type="radio"]:checked + .aq-available-hour-content-box> h2 {
+    color: #FFFFFF;
+}  
+
+.aq-available-hours {
+    margin-top: 20px;
+}
+
+.rotate-x{
+    transform: rotate(180deg);
+}
+
+.aq-available-hour-content-box h2 img {
+    width: 14px;
+    height: 14px;
+    margin-right: 2px;
+}
+
+.aq-reservation-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aq-form-controll input[type="text"] ,
+.aq-form-controll input[type="email"] ,
+.aq-form-controll input[type="tel"] ,
+.aq-form-controll select ,
+.aq-form-controll textarea {
+    background: rgba(229, 229, 229, 0.24);
+    border: 0.5px solid #A5A8AB;
+    height: 52px;
+    width: 100%;
+    font-family: Roboto-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 29px;
+    letter-spacing: 0.07em;
+    color: #A5A8AB;
+    text-indent: 10px;
+}
+.aq-form-controll textarea {
+    min-height: 96px;
+}
+
+.aq-form-controll input[type="radio"] {
+   display: none;
+}
+
+.aq-form-controll input[type="radio"]+ label>span{
+    background: #F9F9F9;
+    height: 25px;
+    display:flex;
+    margin-right: 10px;
+    border-radius: 50%;
+    position: relative;
+    width:25px;
+    border: 0.5px solid #A5A8AB;
+}
+
+.aq-form-controll input[type="radio"]+ label{
+    font-family: Roboto-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    margin-right: 40px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.07em;
+    color: #A5A8AB;
+}
+
+.aq-form-controll input[type="radio"]:checked+ label>span::after{
+    content: "";
+    background: #775AA6;
+    height: 12px;
+    border-radius: 50%;
+    width: 12px;
+    position: absolute;
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.aq-form-group {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.aq-form-controll {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.aq-reservation-form-desc p {
+    font-family: 'Roboto-Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #A1A0A0;
+    margin-bottom: 0;
+}
+
+.aq-reservation-tac p ,
+.aq-reservation-tac p a{
+    font-family: 'Roboto-Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 23px;
+    text-align: left;
+    letter-spacing: 0.05em;
+    color: #606163;
+}
+.aq-reservation-tac p a{
+    text-decoration: underline;
+}
+
+.aq-reservation-tac {
+    display: flex;
+    align-items: flex-start;
+}
+
+.tac-input>input[type="checkbox"]{
+    display:none;
+}
+
+.tac-input>label{
+    background: rgba(229, 229, 229, 0.24);
+    border: 0.5px solid #A5A8AB;
+    height: 22px;
+    width: 22px;
+    position: relative;
+}
+
+.tac-input>label i{
+    color: #775AA6;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s all;
+}
+
+.tac-input>input[type="checkbox"]:checked + label i{
+    visibility: visible;
+    opacity: 1;
+}
+
+.tac-input {
+    margin-top: 5px;
+    margin-right: 15px;
+}
+
+.aq-reservation-footer {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
