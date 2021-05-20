@@ -9,11 +9,38 @@
         max-width: 1310px;
     }
 }
+@media (min-width: 1300px){
+  .col-md-8 {
+      -ms-flex: 0 0 66.666667%;
+      flex: 0 0 66.666667%;
+      max-width: 66.666667%;
+  }
+}
 
 @media (max-width: 1380px) {
     .container {
         max-width: 1140px;
     }
+    .aq-reservation-box {
+      padding: 30px;
+    }
+    .aq-reservation-title {
+        margin: 10px 0px;
+    }
+    .aq-calendar-title {
+      margin-bottom: 0;
+  }
+  .aq-reservation-box {
+    height: calc(100vh - 15px);
+  }
+  .aq-reservation-desc {
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  .aq-form-controll {
+    margin-bottom: 25px;
+  }
 }
 
 @media (max-width: 1024px) {

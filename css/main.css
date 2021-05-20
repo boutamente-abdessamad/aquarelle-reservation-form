@@ -118,13 +118,12 @@ a:hover{
     background: #FFFFFF;
     box-shadow: 0px 4px 7px rgb(0 0 0 / 31%);
     text-align: center;
-    padding: 60px;
+    padding: 45px;
     height: calc(100vh - 80px);
 }
 
 .aq-reservation-logo img {
-    width: 164px;
-    height: 84px;
+    width: 125px;
 }
 
 .aq-reservation-title {
@@ -157,7 +156,19 @@ a:hover{
 }
 
 .aq-reservation-desc {
-    padding-bottom: 25px;
+    padding-bottom: 5px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.aq-reservation-desc a{
+    font-family: 'Roboto-Medium';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 43px;
+    letter-spacing: 0.11em;
+    color: #775AA6;
 }
 
 .aq-reservation-desc p{
@@ -326,6 +337,7 @@ a:hover{
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
+    height: 45px;
     margin-right: 40px;
     line-height: 29px;
     display: flex;
@@ -429,4 +441,13 @@ a:hover{
     display: flex;
     margin-top: 20px;
     justify-content: space-between;
+}
+
+.aq-reservation-box form {
+    margin-top: 35px;
+}
+
+.aq-calendar-box img {
+    width: 100%;
+    max-height: 252px;
 }
